@@ -1,0 +1,109 @@
+{{define "profile"}}
+
+<h3 class="align-center">
+{{ $length := len .History }}
+{{if eq $length 0}}
+  {{if eq .Title "History" }}
+    No games played.
+  {{end}}
+  {{if eq .Title "Tagged Games" }}
+    No tagged games.
+  {{end}}
+{{else}}
+  Total games: {{$length}}
+{{end}}
+</h3>
+
+{{if eq $length 0}}{{if eq .Title "Tagged Games" }}
+<h4 class="align-center">
+  Get them to tag some games with the <code>/tag</code> command. (e.g. <code>/tag Layered Finesse</code>)
+</h4>
+{{end}}{{end}}
+
+{{if gt $length 0}}
+<br />
+
+<ul id="filter-players" class="horizontal">
+  <li id="filter-by-players-label1">
+    <div class="create-game-icon">
+        <i class="fas fa-users" style="position: relative; top: 1px;"></i>
+    </div>
+    Filter by # of Players
+  </li>
+
+  <li id="filter-by-players-label2">
+    <select id="filter-by-players">
+      <option value="all">All</option>
+      <option value="2">2-Players</option>
+      <option value="3">3-Players</option>
+      <option value="4">4-Players</option>
+      <option value="5">5-Players</option>
+      <option value="6">6-Players</option>
+    </select>
+  </li>
+
+  <li>
+    <div class="create-game-icon">
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+    Filter by Score
+  </li>
+
+  <li>
+    <input id="filter-by-score" type="number" min="0" max="30" style="width: 4em;">
+  </li>
+
+  <li id="filter-by-variant-label1">
+    <div class="create-game-icon">
+        <i class="fas fa-rainbow"></i>
+    </div>
+    Filter by Variant
+  </li>
+
+  <li id="filter-by-variant-label2">
+    <input id="filter-by-variant" type="text" style="width: 7em;">
+  </li>
+</ul>
+
+<br /><br /><br />
+
+<table id="history-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th># of Players</th>
+      <th>Score</th>
+      <th>Variant</th>
+      <th>Date & Time</th>
+      <th>Players</th>
+      {{if not .SpecificSeed}}<th>Other Scores</th>{{end}}
+      {{if eq .Title "Tagged Games" }}<th>Tags</th>{{end}}
+    </tr>
+  </thead>
+  <tbody>
+    {{range $index, $results := .History}}
+      <tr
+        id="history-row-{{$index}}"
+        class="history-row history-row-players-{{.Options.NumPlayers}} history-row-score-{{.Score}}"
+        data-variant="{{.Options.VariantName}}"
+      >
+        <td><a href="/replay/{{.ID}}">{{.ID}}</a></td>
+        <td>{{.Options.NumPlayers}}</td>
+        <td>{{.Score}}</td>
+        <td><a href="/variant/{{.Options.VariantID}}">{{.Options.VariantName}}</a></td>
+        <td>{{.DatetimeFinished | formatDatetime}}</td>
+        <td>
+          <!-- From: https://stackoverflow.com/questions/21305865/golang-separating-items-with-comma-in-template -->
+          <a href="/history/{{range $index2, $results2 := .PlayerNames}}{{if $index2}}/{{end}}{{$results2}}{{end}}">
+            {{range $index2, $results2 := .PlayerNames}}{{if $index2}}, {{end}}{{$results2}}{{end}}
+          </a>
+        </td>
+        {{if not $.SpecificSeed}}<td><a href="/seed/{{.Seed}}">{{.NumGamesOnThisSeed}}</a></td>{{end}}
+        {{if eq $.Title "Tagged Games" }}<td>{{.Tags}}</td>{{end}}
+      </tr>
+    {{- end -}}
+  </tbody>
+</table>
+{{end}}
+
+{{end}}
