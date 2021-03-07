@@ -813,11 +813,13 @@ export default class HanabiCard extends Konva.Group implements NodeWithTooltip {
   }
 
   private shouldSetCritical(critical: boolean) {
+    // use the critical note if present
     return (
-      critical &&
-      !cardRules.isPlayed(this.state) &&
-      !cardRules.isDiscarded(this.state) &&
-      !globals.lobby.settings.realLifeMode
+      this.note.critical ||
+      (critical &&
+        !cardRules.isPlayed(this.state) &&
+        !cardRules.isDiscarded(this.state) &&
+        !globals.lobby.settings.realLifeMode)
     );
   }
 
