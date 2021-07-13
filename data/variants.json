@@ -27281,5 +27281,235 @@
       "Prism"
     ],
     "showSuitNames": true
+  },
+  {
+    "name": "Critical Fours (6 Suits)",
+    "id": 1353,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Teal"
+    ]
+  },
+  {
+    "name": "Critical Fours (5 Suits)",
+    "id": 1383,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple"
+    ]
+  },
+  {
+    "name": "Critical Fours & Rainbow (6 Suits)",
+    "id": 1386,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Rainbow"
+    ]
+  },
+  {
+    "name": "Critical Fours & Rainbow (5 Suits)",
+    "id": 1387,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Rainbow"
+    ]
+  },
+  {
+    "name": "Critical Fours & Pink (6 Suits)",
+    "id": 1642,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Pink"
+    ]
+  },
+  {
+    "name": "Critical Fours & Pink (5 Suits)",
+    "id": 1644,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Pink"
+    ]
+  },
+  {
+    "name": "Critical Fours & White (6 Suits)",
+    "id": 1645,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "White"
+    ]
+  },
+  {
+    "name": "Critical Fours & White (5 Suits)",
+    "id": 1646,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "White"
+    ]
+  },
+  {
+    "name": "Critical Fours & Brown (6 Suits)",
+    "id": 1647,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Brown"
+    ]
+  },
+  {
+    "name": "Critical Fours & Brown (5 Suits)",
+    "id": 1648,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Brown"
+    ]
+  },
+  {
+    "name": "Critical Fours & Omni (6 Suits)",
+    "id": 1791,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Omni"
+    ]
+  },
+  {
+    "name": "Critical Fours & Omni (5 Suits)",
+    "id": 1792,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Omni"
+    ]
+  },
+  {
+    "name": "Critical Fours & Null (6 Suits)",
+    "id": 1793,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Null"
+    ]
+  },
+  {
+    "name": "Critical Fours & Null (5 Suits)",
+    "id": 1794,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Null"
+    ]
+  },
+  {
+    "name": "Critical Fours & Muddy Rainbow (6 Suits)",
+    "id": 1795,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Muddy Rainbow"
+    ]
+  },
+  {
+    "name": "Critical Fours & Muddy Rainbow (5 Suits)",
+    "id": 1796,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Muddy Rainbow"
+    ]
+  },
+  {
+    "name": "Critical Fours & Light Pink (6 Suits)",
+    "id": 1797,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Light Pink"
+    ]
+  },
+  {
+    "name": "Critical Fours & Light Pink (5 Suits)",
+    "id": 1798,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Light Pink"
+    ]
+  },
+  {
+    "name": "Critical Fours & Prism (6 Suits)",
+    "id": 1799,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Purple",
+      "Prism"
+    ]
+  },
+  {
+    "name": "Critical Fours & Prism (5 Suits)",
+    "id": 1800,
+    "suits": [
+      "Red",
+      "Yellow",
+      "Green",
+      "Blue",
+      "Prism"
+    ]
   }
 ]

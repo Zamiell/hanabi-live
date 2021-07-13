@@ -283,6 +283,10 @@ One of each card per suit (e.g. 5 in total):
 - A clue token is given when a stack is completed, regardless of whether it is a normal stack or a reversed stack.
 - This variant was invented by [Sean McCarthy on the BoardGameGeek forums](https://boardgamegeek.com/article/30863162).
 
+### Critical Fours
+
+- One 4 is removed from each suit.
+
 <br />
 
 ## Full Variant Listing
